@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct ContentView: View {
+    @State private var player: AVAudioPlayer!
     var body: some View {
         GeometryReader { geo in
             ZStack {
@@ -30,6 +32,16 @@ struct ContentView: View {
             .frame(width: geo.size.width, height: geo.size.height)
         }
         .ignoresSafeArea()
+        .onAppear {
+            playBackgroundMusic()
+        }
+    }
+    
+    private func playBackgroundMusic() {
+        let sound = Bundle.main.path(forResource: "magic-in-the-air", ofType: "mp3")
+        player = try! AVAudioPlayer(contentsOf: URL(filePath: sound!))
+        player.numberOfLoops = -1
+        player.play()
     }
 }
 
