@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		3D46EE202F0A458D000539C4 /* HPTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HPTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D46EE202F0A458D000539C4 /* HPTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = HPTrivia.app; path = "/Users/mahesh/Workspace/learning/HPTrivia/build/Debug-iphoneos/HPTrivia.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -33,7 +33,6 @@
 			isa = PBXGroup;
 			children = (
 				3D46EE052F0A44CE000539C4 /* HPTrivia */,
-				3D46EE202F0A458D000539C4 /* HPTrivia.app */,
 			);
 			sourceTree = "<group>";
 		};
